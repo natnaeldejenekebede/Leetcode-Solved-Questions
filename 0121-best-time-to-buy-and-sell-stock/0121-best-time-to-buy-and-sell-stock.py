@@ -3,13 +3,13 @@ class Solution:
         if not prices:
             return 0
         
-        min_price = prices[0]
-        max_profit = 0
+        minimum_price = prices[0]
+        maximum_profit = 0
         
         for price in prices:
-            if price < min_price:
-                min_price = price
-            elif price - min_price > max_profit:
-                max_profit = price - min_price
+            if price < minimum_price:
+                minimum_price = price
+            elif price - minimum_price > maximum_profit:
+                maximum_profit = price - minimum_price
         
-        return max_profit
+        return maximum_profit
